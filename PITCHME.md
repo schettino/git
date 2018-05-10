@@ -150,7 +150,7 @@ _Problemas_:
 ---
 
  __git-reset__ <br />
-
+ ![workflow](https://git-scm.com/book/en/v2/images/reset-workflow.png)
 ---
 
   ### Próximos desafios
@@ -168,6 +168,7 @@ ___
 
 ### Referências
 
- - Pro Git 2nd Edition (2014), _Scott Chacon_
+ - [Pro Git 2nd Edition (2014), _Scott Chacon_](https://github.com/progit/progit2)
  - [Atlassian tutorials](https://www.atlassian.com/git/tutorials)
  - [Gitflow, _Vincent Driessen_](http://nvie.com/posts/a-successful-git-branching-model/)
+ - [git-merge vs git-rebase](https://www.derekgourlay.com/blog/git-when-to-merge-vs-when-to-rebase/)
