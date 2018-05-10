@@ -92,7 +92,7 @@
 
 ---
 
- - origin/branch recebu atualizações
+ - origin/branch recebeu atualizações
  - merges realizados no ancestral do branch atual
 
 --- 
