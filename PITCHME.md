@@ -149,6 +149,17 @@ _Problemas_:
 
 ---
 
+ __git-reset__ <br />
+
+---
+
+  ### Próximos desafios
+   - Desfazer um `rebase`
+   - Lidando com rebases que ocorrem na origem
+   - 3-way merge
+
+___
+
  # Gitflow
 
 ---
