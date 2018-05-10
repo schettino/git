@@ -99,9 +99,10 @@
 
 ## Outros problemas
 
- - Commit com mensagem ou arquivo errado
- - merge para branch errado
- - hitórico não preservado
+ - Commit com mensagem errada
+ - Commit com arquivos errados
+ - Merge realizado em branch errado
+ - Hitórico de commits não preservado
 
 --- 
 
