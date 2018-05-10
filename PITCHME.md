@@ -151,6 +151,7 @@ _Problemas_:
 
  __git-reset__ <br />
  ![workflow](https://git-scm.com/book/en/v2/images/reset-workflow.png)
+ 
 ---
 
   ### Próximos desafios
