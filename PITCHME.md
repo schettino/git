@@ -111,3 +111,9 @@
  - git merge --no-ff
  - git rebase
  - git pull --rebase
+
+--- 
+
+ # Gitflow
+
+---
