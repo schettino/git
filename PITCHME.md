@@ -152,3 +152,11 @@ _Problemas_:
  # Gitflow
 
 ---
+
+<!-- REFERÊNCIAS -->
+
+### Referências
+
+ - Pro Git 2nd Edition (2014), _Scott Chacon_
+ - [Atlassian tutorials](https://www.atlassian.com/git/tutorials)
+ - [Gitflow, _Vincent Driessen_](http://nvie.com/posts/a-successful-git-branching-model/)
