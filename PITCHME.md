@@ -2,6 +2,8 @@
 
 ### Desenvolvimento de Software 3
 
+---
+
 ![Init](assets/images/1.png)
 
 ---
@@ -26,7 +28,7 @@
 
 --- 
 
-# Introdução
+## Introdução
 
  - Contexto histórico
  - Por que Git?
@@ -38,7 +40,9 @@
 
 ---
 
- # Comandos iniciais
+ ## Comandos iniciais
+
+--- 
 
  - git init
  - git remote
@@ -67,6 +71,8 @@
 
 # Branching
 
+---
+
 ![Init](assets/images/2.png)
 
 ---
@@ -82,7 +88,9 @@
 
 ---
 
-# Desafios comuns
+## Desafios comuns
+
+---
 
  - origin/branch recebu atualizações
  - merges realizados no ancestral do branch atual
