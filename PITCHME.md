@@ -220,8 +220,7 @@ git diff master
 * **git remote**: configurações de origem do repositório
 * **git push**: envia modificações para origem
 * **git pull**: baixa últimas modificações da origem
-* **git merge** unifica dois branches
-* **git rebase**
+* **git merge** e **git rebase**: integra dois branches
 
 ---
 
