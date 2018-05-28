@@ -4,7 +4,7 @@
 
 ---
 
-![Image](./assets/md/assets/1.png)
+![Image](assets/images/1.png)
 
 ---
 
@@ -70,7 +70,7 @@ projeto$ git log --oneline
 f35a9c8 (HEAD -> master) started readme.me file
 ```
 
-![Image](./assets/md/assets/g1.png)
+![Image](assets/images/g1.png)
 
 ---
 
@@ -92,7 +92,7 @@ f35a9c8 (HEAD -> master) started readme.me file
   f35a9c8 (master) started readme.me file
 ```
 
-![Image](./assets/md/assets/g2.png)
+![Image](assets/images/g2.png)
 
 ---
 
@@ -100,7 +100,7 @@ f35a9c8 (HEAD -> master) started readme.me file
 git diff master
 ```
 
-![Image](./assets/md/assets/g3.png)
+![Image](assets/images/g3.png)
 
 ---
 
@@ -156,7 +156,7 @@ git diff master
 
 ---
 
-![Image](./assets/md/assets/w1.png)
+![Image](assets/images/w1.png)
 
 ---
 
@@ -170,7 +170,7 @@ git diff master
 
 ---
 
-![Image](./assets/md/assets/w2.png)
+![Image](assets/images/w2.png)
 
 ---
 
@@ -201,7 +201,7 @@ git diff master
 
 ---
 
-![Image-w3](./assets/md/assets/w3.png)
+![Image-w3](assets/images/w3.png)
 
 ---
 
