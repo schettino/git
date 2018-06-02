@@ -18,15 +18,14 @@
 
 ---
 
+<!--
 ## Tópicos - Parte 2
 
 * Code review
-* Github
-* CI & CD
-* Exemplo: do commit ao publish
-* Open source
+* Github & Forking Workflow
+* CI e CD
 
----
+--- -->
 
 ## Introdução
 
@@ -52,6 +51,8 @@
 
 ---
 
+_Inicializando git e realizando o primeiro commit_
+
 ```console
   home$ mkdir projeto && cd projeto
   projeto$ git init
@@ -74,6 +75,8 @@ f35a9c8 (HEAD -> master) started readme.me file
 
 ---
 
+_Criando o branch **dev** e adicionado um commit_
+
 ```console
   projeto$ git checkout -b dev
   Switched to a new branch 'dev'
@@ -95,6 +98,8 @@ f35a9c8 (HEAD -> master) started readme.me file
 ![Image](assets/images/g2.png)
 
 ---
+
+_Checando alterações em relação ao branch **master**._
 
 ```console
 git diff master
@@ -177,7 +182,7 @@ git diff master
 * Funcionalidades são desenvolvidas isoladamente
 * Minimiza a ocorrência de conflitos
 * Ao serem finalizadas, as funcionalidades são unificadas no branch **master**
-* Apesar de proporcionar uma melhor organização do desenvolvimento, não são definidas aqui para lidar com fluxo de correção de bugs, publicação e testes.
+* Apesar de proporcionar uma melhor organização do desenvolvimento, não há definição de estratégias para lidar com fluxo de correção de bugs, publicação e testes.
 
 ---
 
@@ -186,7 +191,7 @@ git diff master
 ---
 
 * Aborda praticamente todas as situações esperadas no ciclo de desenvolvimento e manutenção de um projeto
-* Facilita a integração de ferramentas para CI e CD.
+* Facilita a integração de ferramentas para Continuous Integration & Deployment.
 * Conflitos são mínimos
 * Facilita a manutenção de mais de uma versão do sistema em produção
 * Atende a todos os tamanhos de projetos
@@ -205,28 +210,37 @@ git diff master
 
 ---
 
-1.  **develop** é criado a partir do **master**
-2.  **relase** é criado a partir do **develop**
-3.  **feture-x** é criado a partir do **develop**
-4.  Após finalizada, realiza-se o merge do **feature-x** no **develop**
-5.  Após preparada a release, realiza-se o merge do respectivo branch **release** no **develop** e no **master**
-6.  Se um problema é identificado no **master** um branch **hotfix-x** é criado
-7.  Quando **hotfix-x** é finalizado, é feito o merge no **master** e **develop**
+### Sumário
+
+* **develop** é criado a partir do **master**
+* **feature-x** é criado a partir do **develop**
+* Após finalizado o branch **feature-x**, realiza-se o merge para o **develop**
+* Após as features previstas para uma release estarem no develop, cria-se um branch **release** a partir do **develop**
+* O branch **release** conta com tarefas para publicação, bug fixes e documentação.
 
 ---
 
-## Sincronizando repositório com a origem
+* Quando um branch **release** é finalizado, realiza-se o merge desse branch no **develop** e no **master**, cria-se uma tag para facilitar futuras referências no histórico, e exclui o branch dessa release.
+* Se um problema é identificado no **master** um branch **hotfix-x** é criado.
+* Quando **hotfix-x** é finalizado, é feito o merge no **master** e no **develop**
+
+---
+
+## Sincronizando repositórios
 
 * **git remote**: configurações de origem do repositório
 * **git push**: envia modificações para origem
 * **git pull**: baixa últimas modificações da origem
-* **git merge** e **git rebase**: integra dois branches
+* **git merge** unifica dois branches
+* **git rebase**
 
 ---
 
 ## Desafios comuns
 
 ---
+
+<!-- adicionar imagens e reorganizar -->
 
 * origin/branch recebeu atualizações
 * merges realizados no ancestral do branch atual
@@ -265,13 +279,13 @@ Novas alterações que entraram em `staging` serão commitadas também.
 
 _Problemas_:
 
-* Commit anterior já havia sido enviado
+* Commit anterior já havia sido enviado ao repositório remoto
 * Commit dado em branch errado
 
 ---
 
 **git-amend** <br />
-_Commit anterior já havia sido enviado_
+_Commit anterior já havia sido enviado ao repositório remoto_
 
 _amend_ afetará histórico do branch. Alguém da equipe pode ter iniciado um novo trabalho baseado no commit a ser removido.
 
